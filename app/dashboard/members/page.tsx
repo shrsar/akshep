@@ -3,6 +3,7 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase-server";
 import MemberRequests from "./MemberRequests";
+export const dynamic = "force-dynamic";
 
 type PageProps = {
   searchParams: Promise<{
